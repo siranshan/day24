@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css card hover effects | untoldcoding</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: "Acme";
+  background: #000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.untoldcoding {
+  position: relative;
+  margin: 20px 0;
+  width: 340px;
+  height: 540px;
+  background: linear-gradient(#fef7f7, #9198e5);
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+}
+
+.untoldcoding:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(-10deg);
+
+  box-shadow: 5px 5px 20px rgb(235, 151, 128);
+}
+
+.untoldcoding .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.untoldcoding .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.untoldcoding:hover .img-container {
+  transform: rotateY(-135deg);
+}
+
+.untoldcoding .untoldcoding-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000;
+}
+
+.untoldcoding .untoldcoding-details h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  background: linear-gradient(to right, #f32170, #ff0c08, #710071, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: untold 3s infinite ease-in-out;
+}
+
+@keyframes untold {
+  0% {
+    background: linear-gradient(to right, #f32170, #ff0c08, #710071, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: untold 0.1s infinite ease-in-out;
+  }
+  50% {
+    background: linear-gradient(to right, #2fff00, #1008ff, #ec4705, #a744ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: untold 3s infinite ease-in-out;
+  }
+  100% {
+    background: linear-gradient(to right, #f32121, #ff0890, #cdb903, #d122f8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: untold 1s infinite ease-in-out;
+  }
+}
+.untoldcoding .untoldcoding-details p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="untoldcoding">
+      <div class="img-container">
+        <img src=https://firebasestorage.googleapis.com/v0/b/sample-project-46d03.appspot.com/o/IMG-20240712-WA0038.jpg?alt=media&token=d7f38e04-8158-4d10-aa6b-92760911da3e alt="" />
+      </div>
+      <div class="untoldcoding-details">
+        <h2>Birthday Wishes</h2>
+        Happy birthday My dear Panda 🐼 Today is best day 🥹This day is complete because of you 🙂 yeah its your birthday. Akka marriage aaiduchu paati ilanu feel panatha d. feel pana kalangal lam pothu. i m here for you. ethukum kavala padatha feel panatha. Happy ah iru.. epovum na un koda irupe. pudichatha panu. pudicha mari iru. nala dance aadu. life enjoy panu. inime nama kalam than. be happy always i am here for always no matter what Once again Happy birthday Thangamey❤️
+        <br /><br />
+        -Siran
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
